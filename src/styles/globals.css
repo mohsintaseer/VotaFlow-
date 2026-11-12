@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #F8FAFC;
+    --foreground: #1E293B;
+    --card: #FFFFFF;
+    --card-foreground: #1E293B;
+    --popover: #FFFFFF;
+    --popover-foreground: #1E293B;
+    --primary: #7C3AED;
+    --primary-foreground: #FFFFFF;
+    --secondary: #F1F5F9;
+    --secondary-foreground: #334155;
+    --muted: #F1F5F9;
+    --muted-foreground: #64748B;
+    --accent: #EDE9FE;
+    --accent-foreground: #5B21B6;
+    --destructive: #EF4444;
+    --destructive-foreground: #FAFAFA;
+    --border: #E2E8F0;
+    --input: #CBD5E1;
+    --ring: #8B5CF6;
+    --chart-1: #7C3AED;
+    --chart-2: #0F766E;
+    --chart-3: #334155;
+    --chart-4: #A78BFA;
+    --chart-5: #14B8A6;
+    --radius: 0.5rem;
+
+    --sidebar-background: #F8FAFC;
+    --sidebar-foreground: #334155;
+    --sidebar-primary: #7C3AED;
+    --sidebar-primary-foreground: #FFFFFF;
+    --sidebar-accent: #EDE9FE;
+    --sidebar-accent-foreground: #5B21B6;
+    --sidebar-border: #E2E8F0;
+    --sidebar-ring: #8B5CF6;
+  }
+
+  .dark {
+    --background: #0F172A;
+    --foreground: #F1F5F9;
+    --card: #1E293B;
+    --card-foreground: #F1F5F9;
+    --popover: #1E293B;
+    --popover-foreground: #F1F5F9;
+    --primary: #A78BFA;
+    --primary-foreground: #1E1B4B;
+    --secondary: #334155;
+    --secondary-foreground: #E2E8F0;
+    --muted: #334155;
+    --muted-foreground: #94A3B8;
+    --accent: #312E81;
+    --accent-foreground: #EDE9FE;
+    --destructive: #7F1D1D;
+    --destructive-foreground: #FAFAFA;
+    --border: #334155;
+    --input: #475569;
+    --ring: #A78BFA;
+    --chart-1: #A78BFA;
+    --chart-2: #2DD4BF;
+    --chart-3: #FB923C;
+    --chart-4: #C084FC;
+    --chart-5: #F87171;
+
+    --sidebar-background: #1E293B;
+    --sidebar-foreground: #E2E8F0;
+    --sidebar-primary: #A78BFA;
+    --sidebar-primary-foreground: #1E1B4B;
+    --sidebar-accent: #312E81;
+    --sidebar-accent-foreground: #EDE9FE;
+    --sidebar-border: #334155;
+    --sidebar-ring: #A78BFA;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+nextjs-portal {
+  display: none;
+}
